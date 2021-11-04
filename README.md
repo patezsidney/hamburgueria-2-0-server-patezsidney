@@ -1,24 +1,83 @@
-# json-server-base
+# Hamburgueria-2-0-server
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
+Esse é o repositório com a base de JSON-Server + JSON-Server-Auth, desenvolvido com propósito educacional.
 
 ## Endpoints
 
-Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/package/json-server-auth), existem 3 endpoints que podem ser utilizados para cadastro e 2 endpoints que podem ser usados para login.
+A API tem um total de 4 endpoints.
+A URL base da API é https://hamburgueria-2-0-server.herokuapp.com
 
-### Cadastro
+### Usuarios:
 
-POST /register <br/>
-POST /signup <br/>
+Dentre os endpoints 2 são utilizados para a gestão de usuários:
+
+#### Cadastro
+
+Cadastrar Usuario.
+
 POST /users
 
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
+Exemplo de Body para a requisição:
 
+```JSON
+    {
+        "name": "string",
+        "email": "string",
+        "password": "string",
+    }
+```
 
-### Login
+#### Login
 
-POST /login <br/>
-POST /signin
+Efetuar Login.
 
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+POST /login
+
+Exemplo de Body para a requisição:
+
+```JSON
+    {
+        "email": "string",
+        "password": "string",
+    }
+```
+
+### Produtos:
+
+Pegar a lista de produtos disponível.
+
+GET /products
+
+Essa requisição não precisa de autorização e body.
+
+### Pedidos:
+
+Enviar o pedido.
+
+POST /orders:
+Essa requisição precisa de autorização com token.
+
+```JSON
+    {
+        "userId": "number",
+        "orderTime": "string",
+        "order": [
+            {
+                "id": "number",
+                "name": "string",
+                "category": "string",
+                "price": "number",
+                "image": "string",
+                "amount": "number",
+            },
+            {
+                "id": "number",
+                "name": "string",
+                "category": "string",
+                "price": "number",
+                "image": "string",
+                "amount": "number",
+            }
+        ],
+    }
+```
