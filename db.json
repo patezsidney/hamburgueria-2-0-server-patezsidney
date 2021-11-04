@@ -6,6 +6,57 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1
+    },
+    {
+      "email": "teste@mail.com",
+      "password": "$2a$10$G0V3ZgMWqpT/iYbbL8PF6ufq9jkTNU9vKA4.Zt3gR6j/nIZS2CTJu",
+      "name": "Teste",
+      "id": 2
     }
-  ]
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Hamburguer",
+      "category": "Sanduíches",
+      "price": 14,
+      "image": "https://i.ibb.co/fpVHnZL/hamburguer.png"
+    },
+    {
+      "id": 2,
+      "name": "X-Burguer",
+      "category": "Sanduíches",
+      "price": 16,
+      "image": "https://i.ibb.co/djbw6LV/x-burgue.png"
+    },
+    {
+      "id": 3,
+      "name": "Big Kenzie",
+      "category": "Sanduíches",
+      "price": 18,
+      "image": "https://i.ibb.co/FYBKCwn/big-kenzie.png"
+    },
+    {
+      "id": 4,
+      "name": "Fanta Guaraná",
+      "category": "Beb\"id\"as",
+      "price": 5,
+      "image": "https://i.ibb.co/cCjqmPM/fanta-guarana.png"
+    },
+    {
+      "id": 5,
+      "name": "Coca",
+      "category": "Beb\"id\"as",
+      "price": 4.99,
+      "image": "https://i.ibb.co/fxCGP7k/coca-cola.png"
+    },
+    {
+      "id": 6,
+      "name": "Fanta",
+      "category": "Bebidas",
+      "price": 4.99,
+      "image": "https://i.ibb.co/QNb3DJJ/milkshake-ovomaltine.png"
+    }
+  ],
+  "orders": []
 }
