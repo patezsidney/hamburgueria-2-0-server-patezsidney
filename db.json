@@ -39,14 +39,14 @@
     {
       "id": 4,
       "name": "Fanta Guaraná",
-      "category": "Beb\"id\"as",
+      "category": "Bebidas",
       "price": 5,
       "image": "https://i.ibb.co/cCjqmPM/fanta-guarana.png"
     },
     {
       "id": 5,
       "name": "Coca",
-      "category": "Beb\"id\"as",
+      "category": "Bebidas",
       "price": 4.99,
       "image": "https://i.ibb.co/fxCGP7k/coca-cola.png"
     },
